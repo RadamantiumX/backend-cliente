@@ -1,0 +1,33 @@
+.blackg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/img/bg-img.png");
+
+}
+.title{
+    margin-top: 6rem;
+}
+.carousel {
+    width: 800px;
+    height: 980px;
+    margin: auto;
+}
+.carousel-control-prev{
+    height: 300px;
+}
+.carousel-control-next{
+    height: 300px;
+}
+.carousel .carousel-control-prev-icon{
+    visibility: hidden;
+}
+.carousel .carousel-control-prev-icon{
+    visibility: visible;
+}
+.carousel .carousel-control-next-icon{
+    visibility: hidden;
+}
+.carousel .carousel-control-next-icon{
+    visibility: visible;
+}

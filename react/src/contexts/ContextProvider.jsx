@@ -1,0 +1,1 @@
+const StateContext = createContext();
