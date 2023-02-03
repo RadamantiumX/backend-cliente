@@ -8,6 +8,12 @@ use App\Models\Informe;
 
 class InformesController extends Controller
 {
+    public function index()
+    {
+        $informes = Informe::all();
+
+        return $informes;
+    }
 
 
     public function store(Request $request){
@@ -16,5 +22,12 @@ class InformesController extends Controller
 
         return response()->json(['message'=>'Datos guardados correctamente']);
 
+    }
+
+    public function show(Informe $informe)
+    {
+        return response()->json([
+            'informe'=>$informe
+        ]);
     }
 }

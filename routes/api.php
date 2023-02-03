@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::post('/enviar',[InformesController::class,'store']);
+Route::get('/informes',[InformesController::class,'index']);
