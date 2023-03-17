@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InformesController;
+use App\Http\Controllers\ImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/enviar',[InformesController::class,'store']);
 Route::get('/informes',[InformesController::class,'index']);
+
+Route::post('/datasend',[ImageController::class,'store']);
+Route::get('/image',[ImageController::class,'index']);
